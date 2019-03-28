@@ -68,6 +68,8 @@
         height: auto;
       }
     </style>
+    <!-- Plyr video player -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.2/plyr.css" />
   </head>
   <body>
     <h1>Exceptional</h1>
@@ -98,5 +100,31 @@
       doloribus minima aut excepturi eum ut voluptate voluptatem assumenda!
       Praesentium, quibusdam!
     </p>
+    <video controls>
+      <source
+        src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.ogv"
+        type="video/ogg"
+      />
+      Your browser does not support HTML5 video.
+      <a href="https://browsehappy.com/" target="_blank"
+        >Please upgrade your browser</a
+      >
+    </video>
+    <br>
+    <div class="plyr__video-embed">
+      <iframe
+        src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4"
+        allow="autoplay"
+        frameborder="0"
+        allowfullscreen="0"
+        allowtransparency
+      ></iframe>
+    </div>
+    <!-- Plyr video player -->
+    <script src="https://cdn.plyr.io/3.5.2/plyr.js"></script>
   </body>
 </html>
